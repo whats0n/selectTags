@@ -1,0 +1,240 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.out {
+  padding: 20px;
+}
+
+.tags {
+  font-size: 0;
+  position: relative;
+  padding-right: 50px;
+}
+
+.tags__track {
+  position: relative;
+  padding: 8px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tags__track:before, .tags__track:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid black;
+  z-index: 3;
+}
+
+.tags__track:before {
+  left: 0;
+}
+
+.tags__track:after {
+  right: 0;
+}
+
+.tags__items {
+  float: right;
+}
+
+.tags__items-wrap {
+  max-width: 90%;
+  *zoom: 1;
+  float: left;
+}
+
+.tags__items-wrap:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.tags__item {
+  position: relative;
+  z-index: 1;
+  padding: 4px 20px 4px 8px;
+  background: #e6e6e6;
+  margin: 0 4px 0 0;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tags__close {
+  font-style: normal;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  bottom: 0;
+  margin-top: -5px;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.tags__close:before, .tags__close:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  border-bottom: 1px solid black;
+}
+
+.tags__close:before {
+  left: 0;
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.tags__close:after {
+  right: 0;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tags__label {
+  padding: 6px 0 5px;
+  display: block;
+  overflow: hidden;
+}
+
+.tags__label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid gray;
+  background: #fff;
+  cursor: text;
+}
+
+.tags__input {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background: none;
+  font-size: 14px;
+}
+
+.tags__dropdown {
+  font-size: 14px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 8px 14px 0px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.tags__dropdown.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tags__list li {
+  cursor: pointer;
+}
+
+.tags__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+}
+
+/*# sourceMappingURL=app.css.map */
